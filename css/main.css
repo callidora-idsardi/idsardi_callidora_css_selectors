@@ -11,14 +11,18 @@
 
 body { 
     font-size: 16px;
-    background-color: black;
+    background-image: url(../images/background.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
 
     font-family: Arial, Helvetica, sans-serif;
 
-    color: white;
+    color: rgb(5, 1, 1);
 }
 
 header > h1 { text-align: center; padding: 8px; }
+
 
 article { 
     width: 25%; 
@@ -30,6 +34,17 @@ article {
 
     text-align: left;
 }
+.todo input {
+    margin: 0 30px 0;
+}
+
+.inprogress input {
+    margin: 0 30px 0;
+}
+
+.done input {
+    margin: 0 30px 0;
+}
 
 main { text-align: center; }
 
@@ -37,18 +52,50 @@ article > h2 { color: gray;  padding: 4px 8px; }
 
 article:first-of-type { border: 4px solid gray; }
 
-#inprogress { border: 4px solid red; }
-#inprogress h2 { color: red; }
+#main-header {
+    color: rgb(66, 30, 18);
+    margin-bottom: 30px;
+}
 
-#done { border: 4px solid green; }
-#done h2 { color: green; }
+#inprogress { border: 4px solid rgb(185, 31, 123); }
+#inprogress h2 { color: rgb(103, 11, 60); }
+
+#done { border: 4px solid rgb(250, 185, 65); }
+#done h2 { color: rgb(230, 127, 17); }
 
 ul { list-style-type: none; }
 
 ul li { padding: 6px 8px; text-transform: uppercase; }
 
-.todo li:nth-child(odd) { background-color: rgba(255, 255, 255, 0.2)}
 
-.inprogress li:nth-child(odd) { background-color: rgba(255, 0, 0, 0.5)}
+.inprogress input[type="checkbox"]:checked + span::after  {
+    content: '\1F44D';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    font-size: 1em;
+    margin-left: 10px;
+    animation: fadeIn 0.7s;
+  }
 
-.done li:nth-child(odd) { background-color: rgba(0, 255, 0, 0.5)}
+  .done input[type="checkbox"]:checked + span::after  {
+    content: '\1F600';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    font-size: 1em;
+    margin-left: 10px;
+    animation: fadeIn 0.7s;
+  }
+
+  
+  .inprogress input:checked + span{
+    background: #f478ee67; 
+   }
+
+   .done input:checked + span {
+    background-color: rgba(232, 101, 19, 0.267);
+
+   }
+
+   
