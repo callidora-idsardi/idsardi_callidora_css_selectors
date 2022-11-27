@@ -12,7 +12,7 @@ Working with: CSS Cascade, Selection and Pseudo Selectors
 
 ## Credits
 
-Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/lined-paper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Background image by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/lined-paper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 ## License
 
